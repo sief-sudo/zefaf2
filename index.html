@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سعديه ❤ سعيد| دعوة فرح</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Amiri:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#1a0d0d; --bg2:#241010; --gold:#d4a24e; --gold2:#f0c883;
+  --cream:#f5e9d6; --red:#8e2b2b; --card:#2b1512;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Cairo',sans-serif;background:radial-gradient(ellipse at top,#2b1414,var(--bg) 60%);color:var(--cream);min-height:100vh;overflow-x:hidden}
+h1,h2,h3{font-weight:900}
+.gold{color:var(--gold)}
+.center{text-align:center}
+.hidden{display:none!important}
+section{max-width:720px;margin:0 auto;padding:64px 20px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--gold),#b07f2e);color:#241505;border:none;font-family:inherit;font-weight:800;font-size:1.05rem;padding:14px 36px;border-radius:50px;cursor:pointer;box-shadow:0 6px 20px rgba(212,162,78,.35);transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(212,162,78,.5)}
+.btn-outline{background:transparent;border:2px solid var(--gold);color:var(--gold);box-shadow:none}
+input,select,textarea{width:100%;background:#1c0e0c;border:1px solid #4a2c22;border-radius:14px;color:var(--cream);font-family:inherit;font-size:1rem;padding:13px 16px;margin-top:8px;outline:none;transition:.2s}
+input:focus,select:focus,textarea:focus{border-color:var(--gold)}
+label{display:block;margin-top:18px;font-weight:700;color:var(--gold2)}
+.card{background:linear-gradient(160deg,var(--card),#1f0e0c);border:1px solid #4a2c22;border-radius:24px;padding:28px;box-shadow:0 10px 40px rgba(0,0,0,.4)}
+/* ===== Hero ===== */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;padding:40px 20px}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 20%,rgba(212,162,78,.12),transparent 55%);pointer-events:none}
+.bism{font-family:'Amiri',serif;color:var(--gold);font-size:1.3rem;letter-spacing:1px}
+.couple{font-size:clamp(2.6rem,9vw,4.6rem);margin:14px 0 4px;text-shadow:0 4px 30px rgba(212,162,78,.25)}
+.heart{display:inline-block;animation:beat 1.4s infinite}
+@keyframes beat{0%,100%{transform:scale(1)}12%{transform:scale(1.25)}24%{transform:scale(1)}}
+.sub{color:#d8c3a5;font-size:1.15rem;margin-top:10px}
+.ornament{color:var(--gold);font-size:1.6rem;margin:18px 0;letter-spacing:12px}
+.countdown{display:flex;gap:14px;justify-content:center;margin:30px 0 8px;flex-wrap:wrap}
+.cd-box{background:linear-gradient(160deg,#301713,#1e0d0b);border:1px solid #5a3524;border-radius:18px;min-width:78px;padding:14px 8px}
+.cd-num{font-size:2.1rem;font-weight:900;color:var(--gold2);line-height:1}
+.cd-lbl{font-size:.8rem;color:#c9ab84;margin-top:6px}
+.venue{margin-top:16px;color:#e8d5b5;line-height:2}
+.scroll-hint{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);color:var(--gold);animation:float 2s infinite;font-size:1.5rem}
+@keyframes float{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,10px)}}
+/* ===== titles ===== */
+.sec-title{font-size:2rem;text-align:center;margin-bottom:8px}
+.sec-sub{text-align:center;color:#c9ab84;margin-bottom:34px}
+.divider{display:flex;align-items:center;gap:14px;justify-content:center;margin:0 auto 30px;color:var(--gold)}
+.divider::before,.divider::after{content:'';height:1px;width:70px;background:linear-gradient(90deg,transparent,var(--gold))}
+.divider::after{background:linear-gradient(90deg,var(--gold),transparent)}
+/* ===== RSVP ===== */
+.choice{display:flex;gap:12px;margin-top:8px}
+.choice button{flex:1;background:#1c0e0c;border:2px solid #4a2c22;border-radius:14px;color:var(--cream);font-family:inherit;font-size:1rem;font-weight:700;padding:13px;cursor:pointer;transition:.2s}
+.choice button.sel-yes{border-color:#4caf7d;background:rgba(76,175,125,.12)}
+.choice button.sel-no{border-color:#c0605e;background:rgba(192,96,94,.12)}
+/* ===== greetings ===== */
+.greet-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.greet-grid{grid-template-columns:1fr}}
+.greet{background:#1e0f0c;border:1px solid #43281f;border-radius:16px;padding:16px;animation:fadeUp .5s}
+.greet .who{color:var(--gold);font-weight:800;margin-bottom:6px}
+.greet .msg{color:#e3d2b8;font-size:.95rem;line-height:1.8}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+/* ===== gallery ===== */
+.up-zone{border:2px dashed #5a3524;border-radius:20px;padding:36px;text-align:center;color:#c9ab84;cursor:pointer;transition:.2s;margin-top:8px}
+.up-zone:hover{border-color:var(--gold);background:rgba(212,162,78,.05)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
+@media(max-width:560px){.gallery{grid-template-columns:repeat(2,1fr)}}
+.ph{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:1;background:#120906;animation:fadeUp .4s}
+.ph img,.ph video{width:100%;height:100%;object-fit:cover;display:block}
+.ph .cap{position:absolute;bottom:0;right:0;left:0;background:linear-gradient(transparent,rgba(0,0,0,.85));font-size:.78rem;padding:18px 10px 8px;color:#f0e2c8}
+.ph .del{position:absolute;top:6px;left:6px;background:rgba(0,0,0,.6);border:none;color:#ff8a80;border-radius:50%;width:26px;height:26px;cursor:pointer;font-size:.9rem}
+/* ===== footer ===== */
+footer{text-align:center;padding:40px 20px 60px;color:#9c8261;font-size:.9rem}
+/* toast */
+#toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--gold);color:#241505;font-weight:800;padding:13px 28px;border-radius:50px;transition:.35s;z-index:99;box-shadow:0 8px 30px rgba(0,0,0,.5)}
+#toast.show{transform:translateX(-50%) translateY(0)}
+/* confetti */
+.confetti{position:fixed;top:-10px;width:10px;height:14px;z-index:98;animation:fall linear forwards;pointer-events:none}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+#audioBtn{position:fixed;top:16px;left:16px;z-index:90;background:rgba(30,15,11,.8);border:1px solid #5a3524;color:var(--gold);border-radius:50%;width:46px;height:46px;font-size:1.2rem;cursor:pointer}
+</style>
+<base target="_blank">
+</head>
+<body>
+
+<button id="audioBtn" title="موسيقى">🎵</button>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="bism">بسم الله الرحمن الرحيم</div>
+  <div style="font-size:.85rem;color:#c9ab84;margin-top:18px">دعوة فرح</div>
+  <h1 class="couple">سعيد <span class="heart gold">❤</span> سعديه</h1>
+  <div class="ornament">✦ ✦ ✦</div>
+  <p class="sub">يتشرفان بدعوتكم لحضور حفل زفافهما</p>
+
+  <div class="countdown" id="countdown">
+    <div class="cd-box"><div class="cd-num" id="cd-d">٠</div><div class="cd-lbl">يوم</div></div>
+    <div class="cd-box"><div class="cd-num" id="cd-h">٠</div><div class="cd-lbl">ساعة</div></div>
+    <div class="cd-box"><div class="cd-num" id="cd-m">٠</div><div class="cd-lbl">دقيقة</div></div>
+    <div class="cd-box"><div class="cd-num" id="cd-s">٠</div><div class="cd-lbl">ثانية</div></div>
+  </div>
+
+  <div class="venue">
+    📅 الخميس ١٧ ديسمبر ٢٠٢٦ — الساعة ٨ مساءً<br>
+    📍 قاعة الياسمين — التجمع الخامس
+  </div>
+
+  <div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+    <button class="btn" onclick="scrollToId('rsvp')">أكّد حضورك 💌</button>
+    <button class="btn btn-outline" id="calBtn">أضف في الميعاد 📅</button>
+  </div>
+  <div class="scroll-hint">⌄</div>
+</header>
+
+<!-- ============ RSVP ============ -->
+<section id="rsvp">
+  <h2 class="sec-title gold">هتيجي؟</h2>
+  <p class="sec-sub">يوم الفرح الطلب ما بترفضش 😉</p>
+  <div class="card">
+    <div class="choice" id="attendChoice">
+      <button type="button" data-v="yes">جاي إن شاء الله 🎉</button>
+      <button type="button" data-v="no">مش هقدر آجي 😔</button>
+    </div>
+    <label>الاسم</label>
+    <input id="rsvpName" placeholder="اكتب اسمك">
+    <label>عدد الأفراد</label>
+    <input id="rsvpCount" type="number" min="1" max="10" value="1">
+    <label>ترتيبة للعروسين (اختياري)</label>
+    <textarea id="rsvpWish" rows="2" placeholder="ألف مبروك يا حبايب ❤"></textarea>
+    <div class="center" style="margin-top:24px">
+      <button class="btn" id="rsvpSend">ابعت ✔</button>
+    </div>
+  </div>
+  <p class="center" style="margin-top:14px;color:#c9ab84" id="rsvpThanks"></p>
+</section>
+
+<!-- ============ GREETINGS ============ -->
+<section id="wishes">
+  <h2 class="sec-title gold">التهاني اللي اتبعتتلكم</h2>
+  <div class="divider">✦</div>
+  <div class="greet-grid" id="greetGrid"></div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallerySec">
+  <h2 class="sec-title gold">ابعتولنا صوركم</h2>
+  <p class="sec-sub">الصور والفيديوهات اللي صوّرتوها في الفرح بالعريسين<br>هتتجمع هنا عند العرسان!</p>
+  <div class="card">
+    <label>اسمك</label>
+    <input id="upName" placeholder="مين اللي بيصوّر؟">
+    <div class="up-zone" id="upZone">
+      📸 ارفع صورك أو فيديوهاتك من هنا<br>
+      <small style="color:#9c8261">لحد ٦ ملفات — اضغط أو اسحب الملفات</small>
+      <input type="file" id="upInput" accept="image/*,video/*" multiple class="hidden">
+    </div>
+    <div class="gallery" id="gallery"></div>
+    <p class="center" style="margin-top:14px;color:#9c8261;font-size:.85rem">
+      🔒 المنطقة دي مشفّرة — مفتاحها عند العرسان بس، مش هيتشال منها حاجة.
+    </p>
+  </div>
+</section>
+
+<!-- ============ MEMORY ============ -->
+<section id="memory">
+  <h2 class="sec-title gold">ذكرى كل سنة</h2>
+  <div class="divider">✦</div>
+  <div class="card center" style="font-size:1.05rem;line-height:2.2">
+    🗓️ كل سنة هيفتكركم موقع الفرح ويبعتلكم صور الفرح وتهنئة جديدة…<br>
+    <span class="gold" style="font-size:1.4rem">كل سنة وانتوا طيبين ❤</span><br>
+    <small style="color:#9c8261">لو الدعوة اتمسحت، كل الصور والتهاني عند العرسان تتشال — عشان كده خلوها عندكم دايمًا.</small>
+  </div>
+</section>
+
+<footer>
+  صُنع بحب ❤ — مروان وسارة — ٢٠٢٦<br>
+  <small>دعوة رقمية صديقة للبيئة 🌿</small>
+</footer>
+
+<div id="toast"></div>
+<audio id="bgMusic" loop src="https://cdn.pixabay.com/download/audio/2022/10/25/audio_5cf2bc8b45.mp3"></audio>
+<script>
+const WEDDING_DATE = new Date('2026-12-17T20:00:00');
+const AR = n => String(n).replace(/\d/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
+
+/* ---------- Countdown ---------- */
+function tick(){
+  const diff = WEDDING_DATE - new Date();
+  if(diff <= 0){
+    document.getElementById('countdown').innerHTML =
+      '<div class="cd-box" style="min-width:200px"><div class="cd-num" style="font-size:1.4rem">الفرح بدأ! 🎉</div></div>';
+    return;
+  }
+  const d = Math.floor(diff/864e5), h = Math.floor(diff/36e5)%24,
+        m = Math.floor(diff/6e4)%60, s = Math.floor(diff/1e3)%60;
+  cdD.textContent=AR(d); cdH.textContent=AR(h); cdM.textContent=AR(m); cdS.textContent=AR(s);
+}
+const cdD=document.getElementById('cd-d'),cdH=document.getElementById('cd-h'),
+      cdM=document.getElementById('cd-m'),cdS=document.getElementById('cd-s');
+tick(); setInterval(tick,1000);
+
+/* ---------- Helpers ---------- */
+const $ = id => document.getElementById(id);
+function scrollToId(id){ document.getElementById(id).scrollIntoView({behavior:'smooth'}); }
+function toast(msg){
+  const t=$('toast'); t.textContent=msg; t.classList.add('show');
+  clearTimeout(t._x); t._x=setTimeout(()=>t.classList.remove('show'),2600);
+}
+function confetti(){
+  const colors=['#d4a24e','#f0c883','#8e2b2b','#fff3d6'];
+  for(let i=0;i<60;i++){
+    const c=document.createElement('div'); c.className='confetti';
+    c.style.right=Math.random()*100+'vw';
+    c.style.background=colors[i%4];
+    c.style.animationDuration=(2+Math.random()*2)+'s';
+    c.style.animationDelay=(Math.random()*.6)+'s';
+    document.body.appendChild(c);
+    setTimeout(()=>c.remove(),5000);
+  }
+}
+
+/* ---------- Add to calendar (.ics) ---------- */
+$('calBtn').onclick = () => {
+  const ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Wedding//AR','BEGIN:VEVENT',
+   'UID:wedding2026@invitation','DTSTAMP:20261121T120000Z',
+   'DTSTART:20261217T180000Z','DTEND:20261217T220000Z',
+   'SUMMARY:فرح مروان وسارة 🎉','LOCATION:قاعة الياسمين - التجمع الخامس',
+   'DESCRIPTION:يتشرفان بدعوتكم لحضور حفل الزفاف','END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));
+  a.download='farah-maroan-sara.ics'; a.click();
+  toast('اتحفظ الميعاد في التقويم 📅');
+};
+
+/* ---------- RSVP ---------- */
+let attend = null;
+document.querySelectorAll('#attendChoice button').forEach(b=>{
+  b.onclick=()=>{
+    document.querySelectorAll('#attendChoice button').forEach(x=>x.className='');
+    attend=b.dataset.v;
+    b.className = attend==='yes' ? 'sel-yes' : 'sel-no';
+  };
+});
+function loadRSVPs(){ try{return JSON.parse(localStorage.getItem('rsvps')||'[]')}catch(e){return[]} }
+function loadGreets(){ try{return JSON.parse(localStorage.getItem('greets')||'[]')}catch(e){return[]} }
+
+$('rsvpSend').onclick=()=>{
+  const name=$('rsvpName').value.trim();
+  if(!attend){ toast('اختار هتيجي ولا لا 😉'); return; }
+  if(!name){ toast('اكتب اسمك الأول 🙏'); return; }
+  const rsvps=loadRSVPs();
+  rsvps.push({name, attend, count:$('rsvpCount').value||1, wish:$('rsvpWish').value.trim(), t:Date.now()});
+  localStorage.setItem('rsvps', JSON.stringify(rsvps));
+  const wish=$('rsvpWish').value.trim();
+  if(attend==='yes'){
+    if(wish){
+      const g=loadGreets(); g.unshift({name, msg:wish}); localStorage.setItem('greets',JSON.stringify(g));
+      renderGreets();
+    }
+    confetti(); toast('تمام يا '+name+'! مستنيينك 🎉');
+  } else toast('معلش يا '+name+'.. هنفتقدك ❤');
+  $('rsvpThanks').textContent = attend==='yes'
+    ? '✅ تمام يا '+name+'! اتأكد حضورك — لو محتاج تعدّل ابعت رسالة تانية.'
+    : '😔 يا '+name+'، رسالتك وصلت — الفرحة ناقصة بيك.';
+  $('rsvpName').value=''; $('rsvpWish').value=''; $('rsvpCount').value=1;
+  attend=null;
+  document.querySelectorAll('#attendChoice button').forEach(x=>x.className='');
+};
+
+/* ---------- Greetings ---------- */
+function renderGreets(){
+  const g=loadGreets();
+  const seed=[
+    {name:'أحمد سامي', msg:'ألف مبروك يا مايكل ويا كاي، ربنا يسعدكم ويتمم بخير'},
+    {name:'خالو سعاد', msg:'يا رب دايمًا فرحانين كده، وعقبال العيال'},
+    {name:'كريم وسلمى', msg:'أحلى فرح حضرته في حياتي! مبروك يا حبايب'},
+    {name:'عمو فاروق', msg:'ربنا يجعلها بداية كل خير، ألف ألف مبروك'}
+  ];
+  const all=[...g, ...seed.filter(s=>!g.some(x=>x.name===s.name))];
+  $('greetGrid').innerHTML = all.map(x=>
+    `<div class="greet"><div class="who">${esc(x.name)} ❤</div><div class="msg">"${esc(x.msg)}"</div></div>`
+  ).join('');
+}
+function esc(s){ return String(s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+renderGreets();
+
+/* ---------- Gallery (photos compressed, stored locally) ---------- */
+function loadPhotos(){ try{return JSON.parse(localStorage.getItem('photos')||'[]')}catch(e){return[]} }
+function renderPhotos(){
+  const ps=loadPhotos();
+  $('gallery').innerHTML = ps.map((p,i)=>
+    `<div class="ph">${p.type.startsWith('video')
+      ? `<video src="${p.data}" controls muted playsinline></video>`
+      : `<img src="${p.data}" loading="lazy">`}
+      <div class="cap">📷 ${esc(p.by)}</div>
+      <button class="del" onclick="delPhoto(${i})">🗑</button></div>`
+  ).join('');
+}
+window.delPhoto = i => {
+  const ps=loadPhotos(); ps.splice(i,1);
+  localStorage.setItem('photos',JSON.stringify(ps)); renderPhotos(); toast('اتشالت الصورة');
+};
+function compressImage(file){
+  return new Promise(res=>{
+    const img=new Image(), url=URL.createObjectURL(file);
+    img.onload=()=>{
+      const canvas=document.createElement('canvas');
+      const scale=Math.min(1, 900/img.width);
+      canvas.width=img.width*scale; canvas.height=img.height*scale;
+      canvas.getContext('2d').drawImage(img,0,0,canvas.width,canvas.height);
+      URL.revokeObjectURL(url);
+      res(canvas.toDataURL('image/jpeg',.72));
+    };
+    img.src=url;
+  });
+}
+async function handleFiles(files){
+  const ps=loadPhotos();
+  const by=$('upName').value.trim()||'ضيف كريم';
+  for(const f of [...files].slice(0,6)){
+    if(f.size > 15*1024*1024){ toast('الملف كبير أوي — حاول ملف أصغر'); continue; }
+    const isVid=f.type.startsWith('video');
+    const data=isVid ? URL.createObjectURL(f) : await compressImage(f);
+    ps.unshift({by, type:f.type, data});
+  }
+  localStorage.setItem('photos',JSON.stringify(ps));
+  renderPhotos(); confetti(); toast('وصلت صوركم — شكرًا! ❤');
+  $('upName').value='';
+}
+$('upZone').onclick=()=>$('upInput').click();
+$('upZone').ondragover=e=>{e.preventDefault();e.currentTarget.style.borderColor='var(--gold)'};
+$('upZone').ondragleave=e=>{e.currentTarget.style.borderColor=''};
+$('upZone').ondrop=e=>{e.preventDefault();handleFiles(e.dataTransfer.files)};
+$('upInput').onchange=e=>{handleFiles(e.target.files);e.target.value=''};
+renderPhotos();
+
+/* ---------- Music ---------- */
+let playing=false;
+$('audioBtn').onclick=()=>{
+  const m=$('bgMusic');
+  playing=!playing;
+  if(playing){ m.volume=.35; m.play().then(()=>$('audioBtn').textContent='🔊').catch(()=>{playing=false;toast('المتصفح منع التشغيل التلقائي — اضغط تاني')}); }
+  else { m.pause(); $('audioBtn').textContent='🎵'; }
+};
+</script>
+</body>
+</html>
